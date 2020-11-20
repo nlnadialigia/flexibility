@@ -1,16 +1,16 @@
 import React from 'react';
 import { FcIdea } from 'react-icons/fc';
-import { Compare, Container, Header, Main, Quote } from './styles';
+import { Compare, Container, Header, Main, Quote, Tips } from './styles';
 import headerImage from '../assets/undraw_in_thought_gjsf.svg';
 import PostIt from '../components/PostIt';
 import smileThinking from '../assets/emoji.png';
+import Cards from '../components/Cards';
 
 const LandingPage: React.FC = () => {
   return (
     <Container>
       <Header>
         <h1>O assunto é: Flexibilidade!!!</h1>
-        {/* <img src={logo} alt="O assunto é flexibilidade" /> */}
         <div>
           <img src={headerImage} alt="Imagem de alguém pensando" />
           <PostIt />
@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
           importância dela nas nossas soft skills?
         </h3>
         <Quote>
-          <FcIdea size={40} />
+          <FcIdea size={26} />
           <p>
             As “soft skills” são habilidades subjetivas, de difícil
             identificação e diretamente relacionadas à inteligência emocional
@@ -53,11 +53,11 @@ const LandingPage: React.FC = () => {
           para um bom convívio e uma atuação de destaque em qualquer que seja a
           área.
         </p>
-        <h3>
-          Ainda não te convenci? Então vamos analisar a flexibilidade em
-          conjunto com outras soft skills.
-        </h3>
         <Compare>
+          <h3>
+            Ainda não te convenci? Então vamos analisar a flexibilidade em
+            conjunto com outras soft skills.
+          </h3>
           <div>
             <strong>Comunicação: </strong>
             <p>
@@ -108,6 +108,23 @@ const LandingPage: React.FC = () => {
             </Quote>
           </div>
         </Compare>
+        <Tips>
+          <h3>
+            Ok. Te convenci. E como desenvolver a flexibilidade? Aqui vão
+            algumas dicas preciosas!
+          </h3>
+          <Cards />
+        </Tips>
+        <p>
+          Encerro com uma frase do filósofo Mário Sérgio Cortela dando a sua
+          visão da flexibilidade:
+        </p>
+        <h4>
+          “Um mundo em mudança constante nos leva a alterar o modo de pensar, de
+          fazer, de olhar, de observar, de praticar, de conceber. Isso nos exige
+          a capacidade de ser flexível nas ideias, nas práticas, nas percepções,
+          nas concepções.”
+        </h4>
       </Main>
     </Container>
   );

@@ -32,7 +32,7 @@ export const Header = styled.div`
 `;
 
 export const Main = styled.div`
-  margin: 40px auto;
+  margin: 60px auto;
   text-align: justify;
 
   p {
@@ -49,12 +49,14 @@ export const Main = styled.div`
 `;
 
 export const Quote = styled.div`
-  margin: 40px;
+  margin: 40px 60px 20px;
   display: flex;
-  gap: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 5px;
 
   img {
-    height: 50px;
+    height: 40px;
   }
 
   p {
@@ -68,11 +70,16 @@ export const Quote = styled.div`
 `;
 
 export const Compare = styled.div`
+  margin-top: 40px;
   div {
-    margin-top: 20px;
+    margin-top: 40px;
 
     strong {
       color: #c90739;
     }
   }
+`;
+
+export const Tips = styled.div`
+  margin-bottom: 30px;
 `;

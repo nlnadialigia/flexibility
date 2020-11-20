@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
-import backgroundImage from '../assets/sand-textures.jpg';
-// import backgroundImage from '../assets/bg.jpg';
+// import backgroundImage from '../assets/sand-textures.jpg';
+import backgroundImage from '../assets/bg.jpeg';
 
 export default createGlobalStyle`
   * {
@@ -13,7 +13,6 @@ export default createGlobalStyle`
 
   body {
     background: #f0f0f5 url(${backgroundImage}) 100% top;
-    background-size: cover;
     color: #130325;
     -webkit-font-smoothing: antialiased;
   }
