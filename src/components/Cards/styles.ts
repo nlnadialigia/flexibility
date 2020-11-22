@@ -9,7 +9,7 @@ export const FlipCard = styled.div`
   margin: 20px 0;
 
   div {
-    width: 300px;
+    width: 400px;
     min-height: 120px;
     font-size: 18px;
     background-color: transparent;
