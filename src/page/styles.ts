@@ -10,16 +10,20 @@ export const Header = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   place-items: center;
 
   h1 {
     font-size: 60px;
+    line-height: 70px;
+    text-align: center;
     font-weight: 900;
     color: #c90739;
   }
 
   div {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
@@ -33,7 +37,11 @@ export const Header = styled.div`
 
 export const Main = styled.div`
   margin: 60px auto;
+  margin-left: 30px;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   p {
     margin-bottom: 20px;
